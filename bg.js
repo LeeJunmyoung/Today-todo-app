@@ -10,7 +10,7 @@ const getRandom = () => {
 
 const paintImage = number =>{
     const image = new Image();
-    image.src=`/backgrouds/${number}.jpg`;
+    image.src=`backgrouds/${number}.jpg`;
     image.classList.add("bgImage");
     body.appendChild(image);
 }
