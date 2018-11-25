@@ -9,10 +9,10 @@ const SHOWING_CLASS_NAME = "showing";
 
 const askForName = () => {
     form.classList.add(SHOWING_CLASS_NAME);
-    form.addEventListener("submit",handleSubmit);
+    form.addEventListener("submit",greetingHandleSubmit);
 }
 
-let  handleSubmit = (event) => {
+const greetingHandleSubmit = (event) => {
     event.preventDefault();
     const currentValue = form_input.value;
     paintGreeting(currentValue);
