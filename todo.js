@@ -35,6 +35,11 @@ const paintTodo = value => {
 
     delBtn.innerText = "X";
     delBtn.addEventListener("click",deleteToDo);
+    delBtn.classList.add("w3-button");
+    delBtn.classList.add("w3-large");
+    delBtn.classList.add("w3-circle");
+    delBtn.classList.add("w3-white");
+    
     span.innerText = value;
     li.appendChild(span);
     li.appendChild(delBtn);
@@ -72,4 +77,3 @@ const todoInit = () => {
     todoForm.addEventListener("submit", todoHandleSubmit);
 }
 
-todoInit();

@@ -28,6 +28,7 @@ const paintGreeting = text =>{
     form.classList.remove(SHOWING_CLASS_NAME);
     greeting.classList.add(SHOWING_CLASS_NAME);
     greeting.innerHTML = `Hello ${text}`;
+    todoInit();
 }
 
 
